@@ -1,10 +1,41 @@
+import 'dart:async';
+import 'package:bookly/constants.dart';
+import 'package:bookly/core/utils/assets.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:floating_text/floating_text.dart';
 
-class SplashPage extends StatelessWidget {
+class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
 
   @override
+  State<SplashPage> createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+  @override
+  void initState() {
+    Timer(kPageRouteDuration, () {
+      GoRouter.of(context).push(kHomePageRoute);
+    });
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(kLogoImage),
+            const SizedBox(height: 25),
+            const FloatingText(
+              text: kSplashText,
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
