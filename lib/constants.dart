@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 //colors
@@ -8,6 +6,7 @@ const Color kBlackColor = Color(0xff000000);
 const Color kMainColor = Color(0xff0f0f21);
 const Color kRedColor = Color(0xffff5333);
 const Color kGreyColor = Color(0xff494a59);
+const Color kYellowColor = Color(0xffffe334);
 
 const kColorizeColors = [
   Colors.purple,
@@ -32,3 +31,6 @@ const String kSearchPageRoute = "/searchPage";
 
 //durations
 const Duration kPageRouteDuration = Duration(seconds: 3);
+
+//sizes
+const double kStarsSize = 18;

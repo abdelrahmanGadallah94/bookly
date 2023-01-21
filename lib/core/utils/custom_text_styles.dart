@@ -19,4 +19,19 @@ class Styles{
     fontWeight: FontWeight.bold,
   );
 
+  static  const textStyle22 = TextStyle(
+    fontSize: 22,
+    fontWeight: FontWeight.bold,
+  );
+
+  static  const textStyle24 = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+  );
+
+  static  const textStyle26 = TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+  );
+
 }

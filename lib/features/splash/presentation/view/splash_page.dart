@@ -3,7 +3,6 @@ import 'package:bookly/constants.dart';
 import 'package:bookly/core/utils/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:floating_text/floating_text.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -30,8 +29,9 @@ class _SplashPageState extends State<SplashPage> {
           children: [
             Image.asset(kLogoImage),
             const SizedBox(height: 25),
-            const FloatingText(
-              text: kSplashText,
+            const Text(
+               kSplashText,
+
             )
           ],
         ),

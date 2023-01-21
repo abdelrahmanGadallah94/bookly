@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-import 'custom_featured_item.dart';
+import 'details_list_view_item.dart';
 
-class CustomFeaturedListView extends StatelessWidget {
-  const CustomFeaturedListView({Key? key}) : super(key: key);
+class CustomDetailsListView extends StatelessWidget {
+  const CustomDetailsListView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 200,
+      height: 120,
       child: ListView.builder(
-        physics: const BouncingScrollPhysics(),
+        padding: EdgeInsets.zero,
         scrollDirection: Axis.horizontal,
         itemCount: 7,
         itemBuilder: (context, index) {
-         return const CustomFeaturedItem();
+          return const DetailsListViewItem();
         },
       ),
     );
